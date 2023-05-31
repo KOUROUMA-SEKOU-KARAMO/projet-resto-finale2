@@ -1,14 +1,14 @@
 @font-face {
   font-family: "Allura";
-  src: url("/assets/fonts/Allura/Allura-Regular.ttf");
+  src: url("../fonts/Allura/Allura-Regular.ttf");
 }
 @font-face {
   font-family: "Poppins";
-  src: url("/assets/fonts/Poppins/Poppins-Medium.ttf");
+  src: url("../fonts/Poppins/Poppins-Medium.ttf");
 }
 @font-face {
   font-family: "Roboto";
-  src: url("/assets/fonts/Roboto/Roboto-Light.ttf");
+  src: url("../fonts/Roboto/Roboto-Light.ttf");
 }
 * {
   margin: 0;
@@ -63,7 +63,7 @@ a {
 
 header {
   height: 100vh;
-  background: url("/assets/img/bg-slider-06.jpg") fixed center/cover;
+  background: url("../img/bg-slider-06.jpg") fixed center/cover;
 }
 header .container-header {
   height: 100%;
@@ -250,7 +250,7 @@ header .container-header p {
 .container-main .section1 .section1-left .left-boder .img-man {
   width: 80px;
   height: 80px;
-  background: url("/assets/img/avatar-01.jpg") center/cover;
+  background: url("../img/avatar-01.jpg") center/cover;
   margin: 20px auto 7px;
   border-radius: 50%;
 }
@@ -265,7 +265,7 @@ header .container-header p {
 .container-main .section1 .section1-right {
   width: 100%;
   height: 100%;
-  background: url("/assets/img/store-01.jpg") center/cover;
+  background: url("../img/store-01.jpg") center/cover;
 }
 .container-main .section2 {
   width: 100%;
@@ -289,7 +289,7 @@ header .container-header p {
   height: 40%;
 }
 .container-main .section2::after {
-  background: url("/assets/img/bg-menu-01.jpg") center/cover;
+  background: url("../img/bg-menu-01.jpg") center/cover;
   bottom: 0;
   height: 60%;
   margin-top: 20px;
@@ -586,7 +586,7 @@ header .container-header p {
   position: relative;
 }
 .container-main .event .container-event .left .top .img1 {
-  background: url("/assets/img/event-01.jpg") no-repeat center/cover;
+  background: url("../img/event-01.jpg") no-repeat center/cover;
   position: relative;
 }
 .container-main .event .container-event .left .top .img1 .month {
@@ -608,7 +608,7 @@ header .container-header p {
   position: relative;
 }
 .container-main .event .container-event .left .bottom .img1 {
-  background: url("/assets/img/event-02.jpg") no-repeat center/cover;
+  background: url("../img/event-02.jpg") no-repeat center/cover;
   position: relative;
 }
 .container-main .event .container-event .left .bottom .img1 .month {
@@ -628,7 +628,7 @@ header .container-header p {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url("/assets/img/event-03.jpg") no-repeat center/cover;
+  background: url("../img/event-03.jpg") no-repeat center/cover;
 }
 .container-main .event .container-event .right .container {
   background: white;
@@ -669,7 +669,7 @@ header .container-header p {
 .container-main .section-map {
   width: 100%;
   min-height: 450px;
-  background: url("/assets/img/gmap.jpg") center/cover;
+  background: url("../img/gmap.jpg") center/cover;
   margin-top: 300px;
   position: relative;
 }
@@ -692,7 +692,7 @@ header .container-header p {
 .container-main .section-map .server .img {
   height: 60px;
   width: 60px;
-  background: url("/assets/img/avatar-02.jpg") center/cover;
+  background: url("../img/avatar-02.jpg") center/cover;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
@@ -717,7 +717,7 @@ header .container-header p {
 }
 
 .container-footer {
-  background: url("/assets/img/bg-footer.jpg") center/cover;
+  background: url("../img/bg-footer.jpg") center/cover;
   display: grid;
   grid-template-columns: repeat(2, 50%);
 }
