@@ -1,0 +1,96 @@
+.container-footer{
+    background: url('/assets/img/bg-footer.jpg') center/cover;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    @media screen and (max-width:630px){
+        background: none;
+        background: #000;
+      }
+   
+
+    .left{
+        @media screen and (max-width:630px){
+           display: none;
+            }
+        display: grid;
+        grid-template-columns: 30% 70%;
+        .container-left{
+            span{
+                display: block;
+                font-family: $fontAllura;
+                color: $colorOrange;
+                margin: 30px 0 2px 0;
+                font-size: 1.9rem;
+             }
+
+             p{
+                color: $colorWhite2;
+                line-height:20px;
+                margin-right: 30px;
+               
+             }
+        }
+
+    }
+    .right{
+        @media screen and (max-width:630px){
+                width: 90vw;
+                margin: 0 auto;
+                text-align: center;
+              }
+        h3{
+             @include title;
+             color: $colorGray2;
+             margin: 30px 0 10px 30px;
+           
+      
+        }
+        form{
+           
+             input{
+                border: 1px solid $colorGray2;
+                background: none;
+                margin: 0 0 10px 30px;
+                padding: 10px;
+                width: 250px;
+             }
+        }
+
+        .container-right{
+             display: grid;
+            //  width: 100% ;
+            grid-template-columns: 20% 80%;
+             align-items: center;
+             margin: 30px 0 ;
+             @media screen and (max-width:630px){
+                max-width: 200px;
+             margin: 0 auto;
+             padding: 30px 0;
+           
+           }
+
+           
+             h3{
+                margin: 0 0 0 30px;
+        
+                @media screen and (max-width:630px){
+                    display: none;
+                  }
+             }
+
+             .media{
+               display: flex;
+               align-items: center;
+
+              
+               
+               li{
+                 padding: 0 20px;
+                 a{
+                     color:$colorGray2;
+                 }
+               }
+             }
+        }
+    }
+}

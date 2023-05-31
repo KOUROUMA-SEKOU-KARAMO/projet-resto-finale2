@@ -1,0 +1,139 @@
+header{
+    height:100vh;
+    background: url("/assets/img/bg-slider-06.jpg")  fixed  center/cover;
+    .container-header{
+        // background: url("/assets/img/bg-slider-06.jpg")  fixed  center/cover;
+         height: 100%;
+         width: 100%;
+         @include flexColumbus;
+          animation: animheader 1.5s ease forwards;
+          opacity: 0;
+          transform : translateY(160px);
+
+          @keyframes animheader {
+              to{
+                  transform : translateY(0);
+                  opacity: 1;
+              }
+          }
+         nav{
+            width: 100%; 
+             .container-nav{
+               @include center1;
+               width: 80%;
+               margin: 0 auto;
+               padding: 15px 0;
+               justify-content: space-between;
+                @media screen and (max-width: 690px){
+                     width: 100vw;
+                }
+
+                @media screen and (max-width: 500px){
+                    width: 80%;
+                  } 
+                // *** Logo *** 
+                .logo{
+                    color: $colorWhite;
+                    font-size: 2.5rem;
+                    font-family: $fontAllura;
+                    width: 7%;
+                    font-weight: 700;
+                    @media screen and (max-width: 500px){
+                      font-size: 2.5rem;
+                      font-weight: 900;
+                      } 
+                }
+
+
+
+                // ****   sytle pages links nav 
+
+                .pages{
+                      @include center1;
+                      position: relative;
+                      width: 63%;
+                      justify-content: space-around;
+                      //  padding: 20px;
+                      @media screen and (max-width: 500px){
+                        display: none;
+                      } 
+
+                      li{
+                        //  padding: 20px;
+                        @media screen and (max-width: 960px) {
+                            padding: 0 5px;
+                        }
+                        a{
+                            @media screen and (max-width: 580px) {
+                                font-size: .7rem;
+                            }
+                        }
+                      }
+
+                }
+
+                .media{
+                     @include center1;
+                     width: 10%; 
+                     justify-content: space-around;
+                     @media screen and (max-width: 500px){
+                        width: 20%;
+                        font-size: 1.5rem;
+                        } 
+                     li{
+                         @media screen and (max-width: 500px){
+                        padding: 0 15px;
+
+                         }
+                         &:hover{
+                             color:orange;
+                             transform: scale(1.5);
+                           
+                       }
+                   
+                     }
+                     
+                }
+
+             }
+         }// ***** fin du style navbar 
+
+         span{
+            color:$colorOrange; 
+         display: block;
+         text-align: center;
+         font-family: $fontAllura;
+         font-size: 2.5rem;
+         text-transform:capitalize;
+         position: relative;
+         margin: 50px 0 -30px 0 ;
+         
+        }
+        h1{
+            @include title;
+            color: $colorWhite;
+            text-align: center;
+            font-size:3.5rem;
+            margin: 0 0 30px 0; 
+
+        }
+
+        // ** Image 
+        img{
+             text-align: center;
+             display: inline-block;
+             width: 30px;
+             height: 30px;
+             margin: 0 auto;
+             background: none;
+        }
+
+        p{
+             color: $colorWhite;
+             text-align: center;
+              text-transform: uppercase;
+               font-family: $fontRoboto;
+               letter-spacing: 5px;
+        }
+    }
+}
